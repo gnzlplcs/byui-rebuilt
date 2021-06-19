@@ -1,70 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Brigham Young University - Idaho</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-  </head>
 
-  <body>
-    <header>
-      <div class="site-banner white-text">
-        <div class="site-banner__left">
-          <a href="#"
-            ><span aria-hidden="true" class="icon-byui-logo">
-              <span class="sr-only">Link to BYU-Idaho home page</span>
-            </span></a
-          >
-          <h1>Home</h1>
-        </div>
-        <div class="site-banner__right">
-          <a href="http://www.byui.edu/#">
-            <span class="icon-search text-white mobile-header-icon">
-              <span class="sr-only">Search BYU-I</span>
-            </span>
-          </a>
-          <a
-            href="https://secure.byui.edu/cas/login?service=https://web.byui.edu/Services/Login/?RedirectURL=https%3a%2f%2fmy.byui.edu%2f"
-          >
-            <span class="icon-audience text-white mobile-header-icon">
-              <span class="sr-only">Login</span>
-            </span>
-          </a>
-          <a href="http://www.byui.edu/#">
-            <span class="icon-menu text-white mobile-header-icon">
-              <span class="sr-only">Expand Menu</span>
-            </span>
-          </a>
-        </div>
-        <form
-          aria-label="Search byui.edu"
-          method="get"
-          action="https://www.byui.edu/search/result?"
-          role="search"
-        >
-          <div>
-            <label for="searchDesktop" class="sr-only"
-              >Search BYU-I websites:
-            </label>
-            <input
-              id="searchDesktop"
-              name="q"
-              placeholder="Powered by Google"
-              alt="Search BYU-I websites (powered by Google.com)."
-              type="text"
-            />
+<head>
+  <meta charset="utf-8" />
+  <title>Brigham Young University - Idaho</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
 
-            <button type="submit">
-              <span aria-hidden="true" class="icon icon-magnifying-glass ">
-                <span class="sr-only">Submit</span>
-              </span>
-            </button>
-          </div>
-        </form>
+<body>
+  <header>
+    <div class="site-banner white-text">
+      <div class="site-banner__left">
+        <a href="#"><span aria-hidden="true" class="icon-byui-logo">
+            <span class="sr-only">Link to BYU-Idaho home page</span>
+          </span></a>
+        <h1>Home</h1>
       </div>
-    </header>
-    <main></main>
-    <footer></footer>
-  </body>
+      <div class="site-banner__right">
+        <a href="http://www.byui.edu/#">
+          <span class="icon-search text-white mobile-header-icon">
+            <span class="sr-only">Search BYU-I</span>
+          </span>
+        </a>
+        <a
+          href="https://secure.byui.edu/cas/login?service=https://web.byui.edu/Services/Login/?RedirectURL=https%3a%2f%2fmy.byui.edu%2f">
+          <span class="icon-audience text-white mobile-header-icon">
+            <span class="sr-only">Login</span>
+          </span>
+        </a>
+        <a href="http://www.byui.edu/#">
+          <span class="icon-menu text-white mobile-header-icon">
+            <span class="sr-only">Expand Menu</span>
+          </span>
+        </a>
+      </div>
+      <form aria-label="Search byui.edu" method="get" action="https://www.byui.edu/search/result?"
+        role="search">
+        <div>
+          <label for="searchDesktop" class="sr-only">Search BYU-I websites:
+          </label>
+          <input id="searchDesktop" name="q" placeholder="Powered by Google"
+            alt="Search BYU-I websites (powered by Google.com)." type="text" />
+
+          <button type="submit">
+            <span aria-hidden="true" class="icon icon-magnifying-glass ">
+              <span class="sr-only">Submit</span>
+            </span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </header>
+  
+  <main class="main">
+    <section class="main__banner-covid"></section>
+    <section class="main__banner">
+      <picture>
+        <img
+          src="https://www.byui.edu/images/home_page/Ready%20Round%207/Teachers-GraphicDesign-desktop.jpg"
+          alt="">
+      </picture>
+    </section>
+    <section class="main__content">
+      <div class="content--video">
+        <picture>
+          <img src="https://www.byui.edu/images/homepage-main/pagebuilder/CampusVideos.jpg" alt="">
+        </picture>
+      </div>
+      <div class="content--gallery">
+        <picture>
+          <img src="https://www.byui.edu/images/homepage-main/pagebuilder/PhotoGallery%280%29.jpg"
+            alt="">
+        </picture>
+      </div>
+      <div class="content--explore">
+        <picture>
+          <img src="https://www.byui.edu/images/homepage-main/pagebuilder/ExploreCampus.jpg" alt="">
+        </picture>
+      </div>
+    </section>
+    <!-- <section class="main__get-information">
+          <form action="">
+            <select name="audience" id="audience">
+              <option value="title">GET INFORMATION FOR:</option>
+              <option value="future-students"><a href="https://www.byui.edu/audience/future-students">Future Students</a></option>
+              <option value="current-students"><a href="https://www.byui.edu/audience/students">Current Students</a></option>
+              <option value="employees"><a href="https://www.byui.edu/audience/employees">Employees</a></option>
+              <option value="visitors"><a href="https://www.byui.edu/campus-tours">Visitors</a></option>
+            </select>
+          </form>
+        </section> -->
+    <section class="main__get-information">
+      <button class="button__audience" type="button">GET INFORMATION FOR:
+      </button>
+      <ul class="ul__audience">
+        <list class="audience--future-student"><a
+            href="https://www.byui.edu/audience/future-students">Future Students</a></list>
+        <list class="audience--current-student">Current Students<a
+            href="https://www.byui.edu/audience/students"></a></list>
+        <list class="audience--employees">Employees<a
+            href="https://www.byui.edu/audience/employees"></a></list>
+        <list class="audience--visitors"><a href="https://www.byui.edu/campus-tours">Visitors</a>
+        </list>
+      </ul>
+    </section>
+    <section class="main__resources"></section>
+    <section class="main__dates"></section>
+  </main>
+
+  <footer></footer>
+</body>
+
 </html>
