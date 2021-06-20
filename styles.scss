@@ -1,5 +1,5 @@
-@import 'typography';
 @import 'icons';
+@import 'typography';
 
 $sm-break: 48em;
 // colors
@@ -9,18 +9,23 @@ $light-gray: #eaeaea;
 $body-font: #020202;
 $link-blue: #0076b6; //why do we have both of these blues?
 $byui-blue: #056cb6;
+$BYUI-font: 'BYUI Open Sans';
 
 // Utility classes
+
 *,
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  text-decoration: none;
 }
+
 img {
-  max-width: 100%;
+  width: 100%;
 }
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -30,4 +35,98 @@ img {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+body {
+  max-width: $sm-break;
+  font-family: $BYUI-font;
+}
+
+.header {
+  background-color: $byui-blue;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+}
+
+.site-banner__left {
+  background-color: $body-font;
+  width: 72px;
+  display: flex;
+}
+
+.site-banner__left .icon-byui-logo {
+  font-size: 2rem;
+}
+
+.icon-byui-logo:before {
+  text-align: center;
+  color: $light-gray;
+  padding: 10px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 20px;
+}
+
+.main__banner-covid {
+  background-color: $body-font;
+  color: $light-gray;
+  margin: 10px auto;
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 20px 40PX;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.main__banner-covid button {
+  background-color: $byui-blue;
+  color: $light-gray;
+  margin: 0 auto;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 6px 24px;
+  display: inline-block;
+  flex: 1;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.main__banner-covid button:hover {
+  background-color: darken($color:$byui-blue, $amount: 3);
+  cursor: pointer;
+}
+
+.main__banner-covid button a {
+  text-decoration: none;
+  color: $light-gray;
+}
+
+figure {
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  width: 100%;
+}
+
+.main__content {
+  margin-top: 15px;
+}
+
+.main__content .content {
+  margin: 0;
+  border: 1px solid $med-gray;
+}
+
+figcaption {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
 }

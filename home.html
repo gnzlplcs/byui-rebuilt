@@ -11,8 +11,7 @@
 </head>
 
 <body>
-  <header>
-    <div class="site-banner white-text">
+  <header class="header">
       <div class="site-banner__left">
         <a href="#"><span aria-hidden="true" class="icon-byui-logo">
             <span class="sr-only">Link to BYU-Idaho home page</span>
@@ -52,11 +51,13 @@
           </button>
         </div>
       </form>
-    </div>
   </header>
-  
+
   <main class="main">
-    <section class="main__banner-covid"></section>
+    <section class="main__banner-covid">
+      <p class="banner-covid--text">Latest COVID-19 Information</p>
+      <button type="button"><a href="https://www.byui.edu/covid-19-updates">COVID-19 Updates</a></button>
+    </section>
     <section class="main__banner">
       <picture>
         <img
@@ -65,21 +66,38 @@
       </picture>
     </section>
     <section class="main__content">
-      <div class="content--video">
-        <picture>
-          <img src="https://www.byui.edu/images/homepage-main/pagebuilder/CampusVideos.jpg" alt="">
-        </picture>
+      <div class="content--video content">
+        <a href="http://video.byui.edu/">
+          <figure>
+            <img src="https://www.byui.edu/images/homepage-main/pagebuilder/CampusVideos.jpg"
+              alt="">
+            <figcaption class="content--description">Campus Videos
+              <span class="content--arrow icon-angle-right"></span>
+            </figcaption>
+          </figure>
+        </a>
       </div>
-      <div class="content--gallery">
-        <picture>
-          <img src="https://www.byui.edu/images/homepage-main/pagebuilder/PhotoGallery%280%29.jpg"
-            alt="">
-        </picture>
+      <div class="content--gallery content">
+        <a href="http://photo.byui.edu/">
+          <figure>
+            <img src="https://www.byui.edu/images/homepage-main/pagebuilder/PhotoGallery%280%29.jpg"
+              alt="">
+            <figcaption class="content--explore">Photo Gallery
+              <span class="content--arrow icon-angle-right"></span>
+            </figcaption>
+          </figure>
+        </a>
       </div>
-      <div class="content--explore">
-        <picture>
-          <img src="https://www.byui.edu/images/homepage-main/pagebuilder/ExploreCampus.jpg" alt="">
-        </picture>
+      <div class="content--explore content">
+        <a href="http://www.byui.edu/campus-tours">
+          <figure>
+            <img src="https://www.byui.edu/images/homepage-main/pagebuilder/ExploreCampus.jpg"
+              alt="">
+            <figcaption class="content--explore">Explore Campus
+              <span class="content--arrow icon-angle-right"></span>
+            </figcaption>
+          </figure>
+        </a>
       </div>
     </section>
     <!-- <section class="main__get-information">
